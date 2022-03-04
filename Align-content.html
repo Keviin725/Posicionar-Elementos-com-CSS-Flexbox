@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlignContent</title>
+
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+        }
+
+        .item{
+            background-color: crimson;
+            padding: 0 5px;
+            margin: 2px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            
+        }
+        .center{
+            align-content: center;
+        }
+        .start{
+            align-content: flex-start;
+        }
+        .end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <h2>padrao(stretch)</h2>
+    <div class="container">
+        <div class="item">os espacamentos do meio sao duas vezes maiores que o inicial e final</div>
+        <div class="item">cria um espacamento igual entre os elementos</div>
+        <div class="item">padrao, e os flex itens crescem igualmente</div>
+        <div class="item">E a propriedade responsavel por tratar o alinhamento das linhas do container em relacao ao eixo vertical do container</div>
+        <div class="item">alinhamento de acordo com a linha base da tipografia dos itens</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="container center space-around">
+        <div class="item">os espacamentos do meio sao duas vezes maiores que o inicial e final</div>
+        <div class="item">cria um espacamento igual entre os elementos</div>
+        <div class="item">padrao, e os flex itens crescem igualmente</div>
+        <div class="item">E a propriedade responsavel por tratar o alinhamento das linhas do container em relacao ao eixo vertical do container</div>
+        <div class="item">alinhamento de acordo com a linha base da tipografia dos itens</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+    </div>
+
+    <h2>space-between</h2>
+    <div class="container space-between">
+        <div class="item">os espacamentos do meio sao duas vezes maiores que o inicial e final</div>
+        <div class="item">cria um espacamento igual entre os elementos</div>
+        <div class="item">padrao, e os flex itens crescem igualmente</div>
+        <div class="item">E a propriedade responsavel por tratar o alinhamento das linhas do container em relacao ao eixo vertical do container</div>
+        <div class="item">alinhamento de acordo com a linha base da tipografia dos itens</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+    </div>
+
+    <h2>start</h2>
+    <div class="container start">
+        <div class="item">os espacamentos do meio sao duas vezes maiores que o inicial e final</div>
+        <div class="item">cria um espacamento igual entre os elementos</div>
+        <div class="item">padrao, e os flex itens crescem igualmente</div>
+        <div class="item">E a propriedade responsavel por tratar o alinhamento das linhas do container em relacao ao eixo vertical do container</div>
+        <div class="item">alinhamento de acordo com a linha base da tipografia dos itens</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+    </div>
+
+    <h2>end</h2>
+    <div class="container end">
+        <div class="item">os espacamentos do meio sao duas vezes maiores que o inicial e final</div>
+        <div class="item">cria um espacamento igual entre os elementos</div>
+        <div class="item">padrao, e os flex itens crescem igualmente</div>
+        <div class="item">E a propriedade responsavel por tratar o alinhamento das linhas do container em relacao ao eixo vertical do container</div>
+        <div class="item">alinhamento de acordo com a linha base da tipografia dos itens</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+        <div class="item">O alinhamento e diferente para quando os itens estao em colunas ou linhas</div>
+    </div>
+
+</body>
+</html>

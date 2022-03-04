@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+
+    <style>
+        .flex-container{
+            
+            border: 1px solid black;
+            margin-bottom: 10px;
+            max-width: 350px;
+            display: flex;
+
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: crimson;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+
+        }
+        .centro{
+            align-self: center;
+        }
+        .inicio{
+            align-self: flex-start;
+        }
+        .fim{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBBBB</div>
+        <div class="item auto">CCCCCC</div>
+        <div class="item auto">DDDDD</div>
+    </section>
+
+    <section class="flex-container align-container">
+        <div class="item stretch">AAA</div>
+        <div class="item inicio">BBBBB</div>
+        <div class="item fim">CC c ccc ccc CCCC</div>
+        <div class="item centro">DDDDD</div>
+    </section>
+</body>
+</html>
